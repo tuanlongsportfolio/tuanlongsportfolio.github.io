@@ -1,0 +1,374 @@
+@charset "utf-8";
+/* CSS Document */
+/* Thầy dặn: Dùng Ctrl+/ để tạo chú thích */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* ------------------THANH NAVIGATION------------------------- */
+body{
+    background-color:#000;
+}
+*{
+    font-family:verdana;
+  }
+  .thanhnavigation{
+    width:100%;
+    height:50px;
+    background-image: url(be-oanh2.jpg);
+    background-size: cover;
+  }
+  nav{
+    width: 100%;
+    height: 50px;
+    background-color: #0005;
+    line-height: 50px;
+  }
+  nav {    /*làm mờ nền đằng sau của navigation*/
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+  nav ul li:hover{
+    background-color:#fe5000;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+  }    
+  nav img{
+    padding: 0 40px;
+    align-items: center;
+  }
+
+
+
+
+/*---------xử lí đường link dễ coi nào-----*/
+    /* a:link, a:visited {
+        background-color: white;
+        color: black;
+        padding: 5px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    a:hover, a:active {
+        font-weight: 900;
+    } */
+    /*---------Kết thúc xử lí đường link----------*/
+
+    /*-------Thiết kế navigation dễ coi nè!!!*/
+    /* .header ul{
+        list-style-type: none;
+    }
+    .header ul, li{
+        display: inline;
+        padding: 0 15px;
+    }
+    .header{
+        height: 100px;
+        display: flex;
+        justify-content:space-around;
+        padding: 0 50px;
+        align-items: center;
+        background-color: #1F0A00;
+    }
+    .header img{
+        height: 20px;
+    }
+    .benphai p{
+        padding: 20px;
+        display: inline;
+    } */
+
+
+/*---------------BODY SEC 0-------------------------------*/
+/*---------------BODY SEC 0-------------------------------*/
+/*---------------BODY SEC 0-------------------------------*/
+.banner {
+    /* thêm thông số url đằng sau background image sẽ giúp làm một lớp phủ mờ */
+    /* background-image: linear-gradient(to top right,black,transparent), url('be-oanh3.jpg'); */
+    background-image: linear-gradient(to top,black,transparent), url('be-oanh3.jpg');
+    /* background-image: url('be-oanh3.jpg'); */
+    background-repeat: no-repeat; /*không lặp lại hình*/
+    background-attachment:scroll;  /*cuộn theo trang web*/
+    background-size: cover;
+    
+  }
+.banner h1{
+    font-weight: 900px;font-size: 90px;
+    font-family: "Montserrat";
+    color: white;
+}
+.banner p{
+    width: 463px;
+    height: 0% ;
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    display: flex;
+    align-items:baseline;
+    height: 90vh;
+    background-color: #1F0A00;
+    color: white;
+    padding: 5px 50px;
+}
+.banner p,h1, h4{ padding-top: 10px;}
+
+.quana{
+    color: #fe5000;
+    font-weight: 900;
+}
+.quanb{color: blue;}
+
+
+
+
+
+/*---------------SEC 3-----------------*/
+
+.sec3{
+    text-align: center;
+}
+.sec3 h1{
+    margin-top: 80px;
+    padding: 20px;
+    color: #f6f6f6;
+}
+.sec3 h3{
+    margin-top: 20px;
+
+}
+.sec3 p{
+    text-align: center;
+    padding: 10px;
+}    
+/* .anhnho{
+    width: 100%;
+} */
+.motdong{   /*Cho 3 đối tượng hiển thị trong 1 dòng*/
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 28%;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    transition: 1s;
+    
+}
+.card:hover {
+    background-color: #fe5000;
+    color: white;
+}
+.card img{
+    transition: 0.5s;
+    width: 100%;
+}
+.card:hover img{
+    transform: scale(1.05);
+}
+
+.anhnho{
+    border-radius: 5px;
+}
+
+
+
+/*---------------SEC 4-----------------*/
+/* nội dung phần 4 - portfolio về ảnh chụp  */
+
+
+.sec4{
+    background-color:black;
+
+    text-align: center;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+
+.sec4 .noidungthantieudesec4{
+    color: #f6f6f6;
+    width: 40%;
+    margin: 0 auto;
+    /*margin 0 auto Dùng để canh giữa các nội dung inline */
+    padding: 13px;
+}
+.sec4 .noidungtieudesec4{
+    color: #f6f6f6;
+    width: 40%;
+    margin: 15% auto 0 auto;
+    /*margin 0 auto Dùng để canh giữa các nội dung inline */
+    padding: 15px;
+}
+.dong{
+    display: flex;
+    justify-content: space-around;
+}
+.sec4 .cardlon{
+    /* display: flex; */
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1px;
+    width: 32%;
+    width: calc(450px - 10px);
+    height: calc(280px - 10px);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sec4 .cardlon:before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleX(0);
+    opacity: 0;
+    z-index: 1;
+}
+
+.sec4  .cardlon:hover:before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.sec4 .cardlon:after
+    {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleY(0);
+    opacity: 0;
+    z-index: 1;
+    }
+
+.sec4  .cardlon:hover:after{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.sec4  .cardlon .hinhsec4{
+    position: relative;
+}
+
+.sec4  .cardlon .hinhsec4 img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.sec4 .cardlon:hover .hinhsec4 img{
+    opacity: .2;
+    transform: scale(1.2);
+}
+.sec4  .cardlon .noidungchusec4{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sec4  .cardlon .noidungchusec4 h2{
+    margin: 0;
+    padding-bottom: 15px;
+    color: #fff;
+    transition: 0.5s;
+    transform:translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.sec4  .cardlon .noidungchusec4 p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform:translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.sec4  .cardlon:hover .noidungchusec4 h2,
+.sec4  .cardlon:hover .noidungchusec4 p{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* ----------------------------------------- */
+.box{ 
+    position: relative;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    overflow: hidden;
+    padding: 0px;
+    background-color: #f6f6f6;
+
+}
+
+.box img{
+    transition: 1.5s;
+    width: 100%;
+
+}
+.box:hover img{
+    transform: scale(1.4) rotate(15deg);
+}
+.megabox{
+    width: 450px;
+    height: 400px;
+    background-color: #fe5000;
+
+}
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------CONTACT.CSS------------------------------ */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
